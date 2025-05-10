@@ -11,17 +11,15 @@
   <link rel="icon" href="favicon.ico" type="image/png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
-  <!-- Primary Meta Tags -->
+  <!-- Meta Tags -->
   <meta name="title" content="Tanjim Aumy" />
   <meta name="description" content="Tanjim Aumy's professional links, social profiles, and creative content." />
   <meta name="keywords" content="Tanjim Aumy, thassanaumy, portfolio, social links, GitHub, LinkedIn, YouTube, Instagram, resume, website" />
   <meta name="author" content="Tanjim Aumy" />
   <meta name="robots" content="index, follow" />
-
-  <!-- Canonical Link -->
   <link rel="canonical" href="https://thassanaumy.github.io/" />
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://thassanaumy.github.io/" />
   <meta property="og:title" content="Tanjim Aumy" />
@@ -37,10 +35,10 @@
   <!-- Theme Color -->
   <meta name="theme-color" content="#121212" />
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Rajdhani:wght@300&family=Poppins:wght@300&family=Bebas+Neue&family=Source+Code+Pro:wght@300&family=Roboto:wght@300&family=Merriweather:wght@300&family=Nunito+Sans:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet" />
 
-  <!-- Font Awesome Icons -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
@@ -52,7 +50,7 @@
 
     html, body {
       height: 100%;
-      font-family: 'Special Elite', monospace;
+      font-family: 'Special Elite', Courier, monospace;
       background-color: #121212;
       color: #e0e0e0;
       font-weight: 300;
@@ -62,7 +60,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 60px;
+      padding: 60px 20px 40px;
       text-align: center;
     }
 
@@ -74,16 +72,27 @@
 
     p {
       font-size: 1.1rem;
-      line-height: 2;
+      line-height: 1.8;
       max-width: 700px;
       font-weight: 300;
     }
 
+    .links {
+      margin: 10px 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
     a {
       text-decoration: none;
-      margin: 0 5px;
       font-weight: 300;
       transition: color 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 6px;
+      font-size: 1rem;
     }
 
     a:hover {
@@ -94,7 +103,7 @@
       margin-right: 5px;
     }
 
-    /* Brand Colors */
+    /* Brand Styles */
     .x  { color: #ccc; font-family: 'Rajdhani', sans-serif; }
     .ig { color: #E1306C; font-family: 'Poppins', sans-serif; }
     .yt { color: #FF0000; font-family: 'Bebas Neue', cursive; }
@@ -110,8 +119,12 @@
       }
 
       p {
-        font-size: 1rem;
-        padding: 0 15px;
+        font-size: 0.95rem;
+        padding: 0 10px;
+      }
+
+      a {
+        font-size: 0.9rem;
       }
     }
   </style>
@@ -119,19 +132,21 @@
 <body>
   <div class="container">
     <h1>Welcome!</h1>
-    <p>
-      You can find me under <strong>'@thassanaumy'</strong> on:<br>
-      <a href="https://x.com/thassanaumy" target="_blank" class="x"><i class="fab fa-x-twitter"></i></a>,
-      <a href="https://instagram.com/thassanaumy" target="_blank" class="ig"><i class="fab fa-instagram"></i>Instagram</a>,
-      <a href="https://youtube.com/@thassanaumy" target="_blank" class="yt"><i class="fab fa-youtube"></i>YouTube</a><br><br>
-
-      And under <strong>'/thassanaumy'</strong> on:<br>
-      <a href="https://github.com/thassanaumy" target="_blank" class="gh"><i class="fab fa-github"></i>GitHub</a>,
-      <a href="https://linkedin.com/in/thassanaumy" target="_blank" class="li"><i class="fab fa-linkedin"></i>LinkedIn</a>,
-      <a href="https://goodreads.com/thassanaumy" target="_blank" class="gr"><i class="fab fa-goodreads-g"></i>Goodreads</a>,
-      <a href="https://flickr.com/people/thassanaumy" target="_blank" class="fl"><i class="fab fa-flickr"></i>Flickr</a>,
-      <a href="https://open.spotify.com/user/thassanaumy" target="_blank" class="sp"><i class="fab fa-spotify"></i>Spotify</a>
-    </p>
+    <p>You can find me under <strong>'@thassanaumy'</strong> on:</p>
+    <div class="links">
+      <a href="https://x.com/thassanaumy" target="_blank" rel="noopener noreferrer" class="x" aria-label="Twitter"><i class="fab fa-x-twitter"></i>Twitter</a>
+      <a href="https://instagram.com/thassanaumy" target="_blank" rel="noopener noreferrer" class="ig" aria-label="Instagram"><i class="fab fa-instagram"></i>Instagram</a>
+      <a href="https://youtube.com/@thassanaumy" target="_blank" rel="noopener noreferrer" class="yt" aria-label="YouTube"><i class="fab fa-youtube"></i>YouTube</a>
+    </div>
+    <br><br>
+    <p>And under <strong>'/thassanaumy'</strong> on:</p>
+    <div class="links">
+      <a href="https://github.com/thassanaumy" target="_blank" rel="noopener noreferrer" class="gh" aria-label="GitHub"><i class="fab fa-github"></i>GitHub</a>
+      <a href="https://linkedin.com/in/thassanaumy" target="_blank" rel="noopener noreferrer" class="li" aria-label="LinkedIn"><i class="fab fa-linkedin"></i>LinkedIn</a>
+      <a href="https://goodreads.com/thassanaumy" target="_blank" rel="noopener noreferrer" class="gr" aria-label="Goodreads"><i class="fab fa-goodreads-g"></i>Goodreads</a>
+      <a href="https://flickr.com/photos/thassanaumy" target="_blank" rel="noopener noreferrer" class="fl" aria-label="Flickr"><i class="fab fa-flickr"></i>Flickr</a>
+      <a href="https://open.spotify.com/user/thassanaumy" target="_blank" rel="noopener noreferrer" class="sp" aria-label="Spotify"><i class="fab fa-spotify"></i>Spotify</a>
+    </div>
   </div>
 </body>
 </html>
