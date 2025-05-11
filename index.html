@@ -7,6 +7,22 @@
 
   <title>Tanjim Aumy</title>
 
+  <!-- Preload inlined font -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/specialelite/v17/XLYgIZbkc4JPUL5CVArUVL0ntnA.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+
+  <!-- Hide page until everything loads -->
+  <style>
+    html.loading {
+      visibility: hidden;
+    }
+  </style>
+  <script>
+    document.documentElement.classList.add('loading');
+    window.addEventListener('load', () => {
+      document.documentElement.classList.remove('loading');
+    });
+  </script>
+
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -35,11 +51,16 @@
   <!-- Theme Color -->
   <meta name="theme-color" content="#121212" />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Rajdhani:wght@300&family=Poppins:wght@300&family=Bebas+Neue&family=Source+Code+Pro:wght@300&family=Roboto:wght@300&family=Merriweather:wght@300&family=Nunito+Sans:wght@300&family=Montserrat:wght@300&family=Oxygen:wght@300&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Special Elite';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('https://fonts.gstatic.com/s/specialelite/v17/XLYgIZbkc4JPUL5CVArUVL0ntnA.woff2') format('woff2');
+    }
+  </style>
 
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
@@ -104,16 +125,15 @@
       margin-right: 5px;
     }
 
-    /* Brand Styles */
-  .x  { color: #ccc; font-family: 'Chirp', sans-serif; }
-  .ig { color: #E1306C; font-family: 'Instagram Sans', sans-serif; }
-  .yt { color: #FF0000; font-family: 'YouTube Sans', sans-serif; }
-  .gh { color: #bbb; font-family: 'Monaspace', monospace; }
-  .li { color: #0A66C2; font-family: 'Source Sans Pro', sans-serif; }
-  .gr { color: #C57A00; font-family: 'Merriweather', serif; }
-  .fl { color: #0063DC; font-family: 'Frutiger', sans-serif; }
-  .sp { color: #1DB954; font-family: 'Spotify Mix', sans-serif; }
-  .rd { color: #FF4500; font-family: 'Reddit Sans', sans-serif; }
+    .x  { color: #ccc; font-family: 'Chirp', sans-serif; }
+    .ig { color: #E1306C; font-family: 'Instagram Sans', sans-serif; }
+    .yt { color: #FF0000; font-family: 'YouTube Sans', sans-serif; }
+    .gh { color: #bbb; font-family: 'Monaspace', monospace; }
+    .li { color: #0A66C2; font-family: 'Source Sans Pro', sans-serif; }
+    .gr { color: #C57A00; font-family: 'Merriweather', serif; }
+    .fl { color: #0063DC; font-family: 'Frutiger', sans-serif; }
+    .sp { color: #1DB954; font-family: 'Spotify Mix', sans-serif; }
+    .rd { color: #FF4500; font-family: 'Reddit Sans', sans-serif; }
 
     @media (max-width: 600px) {
       h1 {
@@ -153,3 +173,5 @@
   </div>
 </body>
 </html>
+
+<!-- "We're just an accident, Harold. We're just bad code." -->
