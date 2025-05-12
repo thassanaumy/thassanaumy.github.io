@@ -48,7 +48,7 @@ Ensures the layout scales correctly on all screen sizes, especially mobile devic
 Meta tags help search engines understand your page and how to index it.
 
 ```html
-<meta name="description" content="Tanjim Aumy's professional links, social profiles, and creative content." />
+<meta name="description" content="Tanjim Aumy's..." />
 <meta name="author" content="Tanjim Aumy" />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://thassanaumy.github.io/" />
