@@ -14,6 +14,7 @@
       visibility: hidden;
     }
   </style>
+  
   <script>
     document.documentElement.classList.add('loading');
     window.addEventListener('load', () => {
@@ -138,6 +139,23 @@
     .sp { color: #1DB954; font-family: 'Spotify Mix', sans-serif; }
     .rd { color: #FF4500; font-family: 'Reddit Sans', sans-serif; }
 
+    /* Source Link */
+    .source-link {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      color: #575757;
+      font-size: 0.75rem;
+      font-family: monospace;
+      text-decoration: none;
+      z-index: 9999;
+      transition: color 0.2s ease;
+    }
+
+    .source-link:hover {
+      color: #cacaca;
+    }
+
     @media (max-width: 600px) {
       h1 {
         font-size: 2rem;
@@ -151,20 +169,63 @@
       a {
         font-size: 0.9rem;
       }
+
+      .source-link {
+        font-size: 0.65rem;
+        bottom: 12px;
+        right: 12px;
+      }
     }
   </style>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Tanjim Aumy",
+        "url": "https://thassanaumy.github.io/",
+        "sameAs": [
+          "https://x.com/thassanaumy",
+          "https://instagram.com/thassanaumy",
+          "https://youtube.com/@thassanaumy",
+          "https://github.com/thassanaumy",
+          "https://linkedin.com/in/thassanaumy",
+          "https://goodreads.com/thassanaumy",
+          "https://flickr.com/photos/thassanaumy",
+          "https://open.spotify.com/user/thassanaumy",
+          "https://www.reddit.com/user/thassanaumy"
+        ],
+        "description": "Tanjim Aumy's professional links, social profiles, and creative content.",
+        "image": "https://thassanaumy.github.io/preview-image.png"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Tanjim Aumy",
+        "url": "https://thassanaumy.github.io/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://thassanaumy.github.io/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="container">
     <h1>Welcome!</h1>
-    <p>You can find me under <strong>'@thassanaumy'</strong> on:</p>
+    <p>You can find me under <strong>@thassanaumy</strong> on:</p>
     <div class="links">
       <a href="https://x.com/thassanaumy" target="_blank" rel="noopener noreferrer" class="x" aria-label="Twitter"><i class="fab fa-x-twitter"></i>Twitter</a>
       <a href="https://instagram.com/thassanaumy" target="_blank" rel="noopener noreferrer" class="ig" aria-label="Instagram"><i class="fab fa-instagram"></i>Instagram</a>
       <a href="https://youtube.com/@thassanaumy" target="_blank" rel="noopener noreferrer" class="yt" aria-label="YouTube"><i class="fab fa-youtube"></i>YouTube</a>
     </div>
     <br><br>
-    <p>And under <strong>'/thassanaumy'</strong> on:</p>
+    <p>And under <strong>/thassanaumy</strong> on:</p>
     <div class="links">
       <a href="https://github.com/thassanaumy" target="_blank" rel="noopener noreferrer" class="gh" aria-label="GitHub"><i class="fab fa-github"></i>GitHub</a>
       <a href="https://linkedin.com/in/thassanaumy" target="_blank" rel="noopener noreferrer" class="li" aria-label="LinkedIn"><i class="fab fa-linkedin"></i>LinkedIn</a>
@@ -174,6 +235,15 @@
       <a href="https://www.reddit.com/user/thassanaumy" target="_blank" rel="noopener noreferrer" class="rd" aria-label="Reddit"><i class="fab fa-reddit"></i>Reddit</a>
     </div>
   </div>
+
+  <!-- Source Link -->
+  <a href="https://github.com/thassanaumy/thassanaumy.github.io"
+     class="source-link"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="View Source on GitHub">
+    <i class="fas fa-code-branch"></i>
+  </a>
 </body>
 </html>
 
